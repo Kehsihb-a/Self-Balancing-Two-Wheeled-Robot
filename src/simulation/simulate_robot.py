@@ -243,7 +243,7 @@ class Window(QMainWindow):
         return w
 
     def _speed_changed(self, value: int) -> None:
-        speed = value / 1000
+        speed = value / 10000
         self.th.set_speed(speed)
 
     def _yaw_changed(self, value: int) -> None:
